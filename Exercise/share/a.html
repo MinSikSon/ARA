@@ -10,8 +10,21 @@
 			border:1px solid red;
 		}
 	</style>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script>
+		function InitMap() {
+			var myLatlng = new google.maps.LatLng(37.218657, 127.057441);
+			var mapOptions = {
+				zoom: 14,
+				center: myLatlng
+			}
+
+			var map = new google.maps.Map(document.getElementById('map_id'), mapOptions);
+		}
+	</script>
 </head>
-<body>
+<body onload="InitMap()">
 	<h1>php</h1>
 	<?php
 		echo 10+10;
@@ -22,5 +35,11 @@
 	</script>
 	<h1>link test</h1>
 	<a href="https://github.com/MinSikSon/ARA">ARA github</a>
+
+	<div id="map_id"style="width:500px; height:300px;"></div>
+	<script async defer
+	src=src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbcoefcFo3o5LXfPoim1Z7VVCFD3FGgWk&callback=initMap"
+	type="text/javascript"></script>
+
 </body>
 </html>
