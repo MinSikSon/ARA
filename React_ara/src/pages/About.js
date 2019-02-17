@@ -7,8 +7,14 @@ const About = ({location, match}) =>{
 
     const detail = query.detail === 'true';
 
+    const stylePage = {
+        border: '3px solid black',
+        padding: '8px',
+        margin: '8px'
+      };
+
     return (
-        <div>
+        <div style={stylePage}>
             <h2>About {match.params.name}</h2>
             {detail && 'detail: blahblah'}
             {!detail && 'hihi'}

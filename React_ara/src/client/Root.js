@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import App from 'shared/App';
 
+//// type 1 : component class
 // class Root extends Component
 // {
 //     render()
@@ -18,15 +19,28 @@ import App from 'shared/App';
 //     }
 // }
 
-const Root = () => (
-    <div>
-    {console.log('Root.js START')}
-    <BrowserRouter>
-        <App/>
-    </BrowserRouter>
-    {console.log('Root.js END')}
-    </div>
-);
+//// type 2 : single function
+// const Root = () => (
+//     <div>
+//     {console.log('Root.js START')}
+//     <BrowserRouter>
+//         <App/>
+//     </BrowserRouter>
+//     {console.log('Root.js END')}
+//     </div>
+// );
 
+//// type 3 : single function + @
+const Root = () => {
+    return(
+        <div>
+        {console.log('Root.js START')}
+        <BrowserRouter>
+            <App/>
+        </BrowserRouter>
+        {console.log('Root.js END')}
+        </div>
+    );
+};
 
 export default Root;

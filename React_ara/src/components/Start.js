@@ -3,7 +3,7 @@ import MapAndList from './MapAndList.js'
 
 class Start extends Component {
   render() {
-    const style = {
+    const styleComponent = {
       border: '1px solid black',
       padding: '8px',
       margin: '8px'
@@ -11,7 +11,8 @@ class Start extends Component {
     
     console.log('Start.js render()');
     return (
-      <div style={style}>
+      <div style={styleComponent}>
+        <h2>[Start.js]</h2>
         <MapAndList />
       </div>
     );

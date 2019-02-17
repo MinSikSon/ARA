@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class MapAndList extends Component {
     // DB 에서 관리해야함
@@ -24,7 +25,7 @@ class MapAndList extends Component {
       count = 0
 
 render() {
-    const style = {
+    const styleComponent = {
         border: '1px solid black',
         padding: '8px',
         margin: '8px'
@@ -32,9 +33,12 @@ render() {
       
     console.log('MapAndList.js render() START');
     return (
-      <form style={style}>
-        <div>MapAndList</div>
-        <button>글쓰기</button>
+      <form style={styleComponent}>
+        <h2>[MapAndList.js]</h2>
+        <div>
+          {/* <button>글쓰기</button> */}
+          <li><Link to="/create">글쓰기</Link></li>
+        </div>
         {console.log('MapAndList.js render() END')}
       </form>
     );
