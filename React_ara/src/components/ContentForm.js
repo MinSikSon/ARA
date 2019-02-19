@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 
 class ContentForm extends Component{
     state = {
-        name: '',
-        address: ''
+        title: '',
+        nickName: '',
+        address: '',
+        phone: '',
+        perpose: ''
     }
     handleChange = (e) => {
         this.setState({
@@ -13,6 +16,17 @@ class ContentForm extends Component{
 
     handleSubmit = (e) => {
         console.log('do nothing right now..');
+        e.preventDefault();
+
+        this.props.onCreate(this.state);
+
+        this.setState({
+            title: '',
+            nickName: '',
+            address: '',
+            phone: '',
+            perpose: ''
+        })
     }
 
     render(){
@@ -25,21 +39,44 @@ class ContentForm extends Component{
             <form onSubmit={this.handleSubmit}>
                 <div style={styleComponent}>
                     <h2>[ContentForm.js]</h2>
-                    <input
-                        placeholder="글이름"
-                        value={this.state.name}
+                    <ul>
+                    <li><input
+                        placeholder="title"
+                        value={this.state.title}
                         onChange={this.handleChange}
-                        name="name"
+                        name="title"
+                    /></li>
+                    <li><input
+                        placeholder="nickName"
+                        value={this.state.nickName}
+                        onChange={this.handleChange}
+                        name="nickName"
 
-                    />
-                    <input
+                    /></li>
+                    <li><input
                         placeholder="주소?"
                         value={this.state.address}
                         onChange={this.handleChange}
                         name="address"
-                    />
-                    <div>글이름: {this.state.name}</div>
+                    /></li>
+                    <li><input
+                        placeholder="phone"
+                        value={this.state.phone}
+                        onChange={this.handleChange}
+                        name="phone"
+                    /></li>
+                    <li><input
+                        placeholder="perpose"
+                        value={this.state.perpose}
+                        onChange={this.handleChange}
+                        name="perpose"
+                    /></li>
+                    </ul>
+                    <div>글이름: {this.state.title}</div>
+                    <div>닉네임: {this.state.nickName}</div>
                     <div>주소: {this.state.address}</div>
+                    <div>phone: {this.state.phone}</div>
+                    <div>perpose: {this.state.perpose}</div>
                     <button type="submit">생성(rerender 된다)</button>
                 </div>
             </form>

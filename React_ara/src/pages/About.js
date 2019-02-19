@@ -18,6 +18,7 @@ const About = ({location, match}) =>{
             <h2>About {match.params.name}</h2>
             {detail && 'detail: blahblah'}
             {!detail && 'hihi'}
+            <h3>url {match.url}</h3>
         </div>
     );
 }
