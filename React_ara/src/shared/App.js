@@ -4,11 +4,11 @@ import { Home, Create, About, ContentList } from 'pages';
 import { Menu } from 'components';
 
 // css
-import logo from '../logo.svg'
-import '../App.css';
+import logo from 'logo.svg'
+import 'App.css';
 
 // sass
-import SassComponent from "../SassComponent";
+import SassComponent from "SassComponent";
 
 class App extends Component {
   render() {
