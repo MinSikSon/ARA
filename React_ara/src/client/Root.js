@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import App from 'shared/App';
+import 'Root.css';
 
 //// type 1 : component class
 // class Root extends Component
@@ -33,7 +34,8 @@ import App from 'shared/App';
 //// type 3 : single function + @
 const Root = () => {
     return(
-        <div>
+        <div className="Root">
+        <h3>[Root.js]</h3>
         {console.log('Root.js START')}
         <BrowserRouter>
             <App/>

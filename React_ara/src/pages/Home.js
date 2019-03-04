@@ -1,5 +1,6 @@
 import React from 'react';
-import { Start } from 'components';
+import { Start, SearchBox } from 'components';
+import 'Home.css';
 
 const Home = () =>{
     const stylePage = {
@@ -8,9 +9,10 @@ const Home = () =>{
         margin: '8px'
       };
     return (
-        <div style={stylePage}>
-            <h2>[Home.js]</h2>
-            <Start/>
+        <div className="Home" style={stylePage}>
+            {/* <h2>[Home.js]</h2> */}
+            {/* <Start/> */}
+            <SearchBox/>
         </div>
     );
 }

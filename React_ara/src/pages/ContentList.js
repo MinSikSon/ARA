@@ -25,7 +25,7 @@ class ContentList extends Component{
 
         return(
             <div style={stylePage}>
-                <h2>[ContentList.js]</h2>
+                {/* <h2>[ContentList.js]</h2> */}
                 {list}
             </div>
         );

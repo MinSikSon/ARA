@@ -29,7 +29,7 @@ class Content extends Component {
 
         return(
             <div style={stylePage}>
-                <h2>[Content.js]</h2>
+                {/* <h2>[Content.js]</h2> */}
                <ul>
                     <li>[id] : {id}</li>
                     <li>[title] : {title}</li>

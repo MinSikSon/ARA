@@ -13,16 +13,11 @@ import SassComponent from "SassComponent";
 class App extends Component {
   render() {
 
-    const styleApp = {
-      border: '5px solid black',
-      padding: '8px',
-      margin: '8px'
-    };
-
     console.log('App.js render() START');
     return (
-      <div className="App" style={styleApp}>
-      <header>
+      <div className="App">
+      <h2>[App.js]</h2>
+      {/* <header>
         <SassComponent/>
         <img src={logo} className="logo" alt="logo" />
         <p>&lt;p&gt; 태그는 paragraph, 즉 문단의 약자로, 하나의 문단을 만들 때 쓰입니다.</p>
@@ -30,7 +25,7 @@ class App extends Component {
         <p>vmin : 1vmin == 1/100 size</p>
         <p>vhmin : 1vhmin == 1/100 height size. 100vh 까지 사용</p>
         <p>vhmin : 1vwmin == 1/100 height size.</p>
-      </header>
+      </header> */}
         <Menu/>
 
         <Route exact path="/" component={Home}/>

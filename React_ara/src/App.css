@@ -1,6 +1,12 @@
 .App {
   text-align: center;
   font-size: calc(24px + 2vmin);
+
+  border: 5px solid black;
+  padding: 8px;
+  margin: 8px;
+
+  width: 100vmin;
 }
 
 div {

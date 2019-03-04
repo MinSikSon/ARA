@@ -15,7 +15,7 @@ const Menu = () => {
 
     return(
         <div style={styleComponent}>
-            <h2>[Menu.js]</h2>
+            {/* <h2>[Menu.js]</h2> */}
             <ul>
                 <li><NavLink exact to ="/" activeStyle={activeStyle}>Home</NavLink></li>
                 <li><NavLink exact to ="/about" activeStyle={activeStyle}>about</NavLink></li>

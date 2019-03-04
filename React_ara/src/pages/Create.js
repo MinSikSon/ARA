@@ -50,7 +50,7 @@ class Create extends Component {
 
     return (
       <div style={stylePage}>
-          <h2>[Create.js]</h2>
+          {/* <h2>[Create.js]</h2> */}
           <li><NavLink exact to ="/" activeStyle={activeStyle}>뒤로가기</NavLink></li>
           
           <ContentForm onCreate={this.handleCreate}/>

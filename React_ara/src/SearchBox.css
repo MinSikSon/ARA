@@ -1,0 +1,81 @@
+.SearchBox {
+    text-align: left;
+    font-size: calc(24px + 2vmin);
+    width: 380px;
+    height: 480px;
+
+    padding: 8px;
+    margin: 80px;
+    border-radius: 5px;
+
+    background: white;
+}
+
+.SearchBox .firstText {
+    width: 340px;
+    height: 80px;
+
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+}
+
+.SearchBox .margin {
+    width: 340px;
+    height: 3px;
+
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+}
+
+.SearchBox .destination {
+    width: 340px;
+    height: 40px;
+
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+}
+
+.SearchBox .checkInOut {
+    width: 340px;
+    height: 40px;
+
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+}
+#checkIn{
+    float: left;
+    width: 140px;
+
+    border: 1px solid black;
+}
+
+#checkOut{
+    float: right;
+    width: 180px;
+
+    border: 1px solid black;
+}
+
+.SearchBox .member {
+    width: 340px;
+    height: 30px;
+
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+}
+
+.SearchBox .searchButton {
+    text-align: right;
+
+    width: 340px;
+    height: 20px;
+
+    border: 1px solid black;
+    padding: 8px;
+    margin: 8px;
+}

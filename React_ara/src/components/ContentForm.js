@@ -38,7 +38,7 @@ class ContentForm extends Component{
         return(
             <form onSubmit={this.handleSubmit}>
                 <div style={styleComponent}>
-                    <h2>[ContentForm.js]</h2>
+                    {/* <h2>[ContentForm.js]</h2> */}
                     <ul>
                     <li><input
                         placeholder="title"
