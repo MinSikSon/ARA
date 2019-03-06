@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import { Home, Create, About, ContentList } from 'pages';
+import { Home, Create, About } from 'pages';
 import { Menu } from 'components';
 
 // css
 import logo from 'logo.svg'
-import 'App.css';
+import 'css/App.css';
 
 // sass
 import SassComponent from "SassComponent";
@@ -16,7 +16,7 @@ class App extends Component {
     console.log('App.js render() START');
     return (
       <div className="App">
-      <h2>[App.js]</h2>
+      {/* <h2>[App.js]</h2> */}
       {/* <header>
         <SassComponent/>
         <img src={logo} className="logo" alt="logo" />
@@ -26,7 +26,7 @@ class App extends Component {
         <p>vhmin : 1vhmin == 1/100 height size. 100vh 까지 사용</p>
         <p>vhmin : 1vwmin == 1/100 height size.</p>
       </header> */}
-        <Menu/>
+        {/* <Menu/> */}
 
         <Route exact path="/" component={Home}/>
         <Route path="/create" component={Create}/>
@@ -34,7 +34,6 @@ class App extends Component {
           <Route path="/about/:name" component={About}/>
           <Route path="/about" component={About}/>
         </Switch>
-        <Route path="/contentlist" component={ContentList}/>
         {console.log('App.js render() END')}
       </div>
     );

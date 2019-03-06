@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { ContentForm } from 'components';
-import { ContentList } from 'pages';
+import { ContentForm, ContentList } from 'components';
 
 class Create extends Component {
   // temp

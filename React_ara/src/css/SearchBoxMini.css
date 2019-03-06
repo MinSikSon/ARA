@@ -1,0 +1,13 @@
+.SearchBoxMini {
+    margin: 8px;
+    vertical-align: middle;
+
+    /* border: 1px solid black; */
+    /* padding: 8px; */
+    /* margin: 8px; */
+    background-color: white;
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Map } from 'components'
-import { ContentList } from 'pages'
+import 'css/MapAndList.css'
+import {ContentList} from 'components';
+import SearchBoxMini from './SearchBoxMini';
 
 class MapAndList extends Component {
   // DB 에서 관리해야함
@@ -27,26 +29,35 @@ class MapAndList extends Component {
     count = 0
 
   render() {
-    const styleComponent = {
-        border: '1px solid black',
-        padding: '8px',
-        margin: '8px'
-      };
+
       
     const {information} = this.state;
     console.log('MapAndList.js render() START');
-    return (
-      <form style={styleComponent}>
-        <h2>[MapAndList.js]</h2>
-        <div>
-          <Map/>
-          {/* <button>글쓰기</button> */}
-          <li><Link to="/create" >글쓰기(버튼으로..)</Link></li>
-          {/* /create 에서 값 전달 받아서 위의 state에 적어줘야 한다.*/}
 
-          {/* <li><Link to="/contentlist">글목록</Link></li> */}
-          <ContentList data={information}/>
+
+    return (
+      <form className="MapAndList">
+        {/* <h2>[MapAndList.js]</h2> */}
+          {/* <img id="logo" src="https://avatars1.githubusercontent.com/u/47748609?s=200&v=4"/>
+          <input id="searchBar" placeholder="검색"/> */}
+        <SearchBoxMini/>
+        <div className="middle">
+          <button id="filter">날짜</button>
+          <button id="filter">인원</button>
+          <button id="filter">필터</button>
         </div>
+        <div className="bottom">
+          bottom
+          <div>information</div>
+          <div>
+            [list]
+            <ContentList data={information}/> 
+          </div>
+
+        </div>
+
+
+
         {console.log('MapAndList.js render() END')}
       </form>
     );

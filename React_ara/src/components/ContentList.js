@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Route, Link } from 'react-router-dom';
-import { Content } from 'pages';
+import {Content} from 'components';
+import 'css/ContentList.css';
 
 class ContentList extends Component{
     static defaultProps = {
@@ -9,9 +10,9 @@ class ContentList extends Component{
 
     render(){
         const stylePage = {
-            border: '3px solid black',
-            padding: '8px',
-            margin: '8px'
+            // border: '3px solid black',
+            // padding: '8px',
+            // margin: '8px'
         };
 
         const {data} = this.props;

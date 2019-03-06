@@ -1,18 +1,15 @@
 import React from 'react';
 import { Start, SearchBox } from 'components';
-import 'Home.css';
+import 'css/Home.css';
+import MapAndList from '../components/MapAndList';
 
 const Home = () =>{
-    const stylePage = {
-        border: '3px solid black',
-        padding: '8px',
-        margin: '8px'
-      };
     return (
-        <div className="Home" style={stylePage}>
+        <div className="Home">
             {/* <h2>[Home.js]</h2> */}
             {/* <Start/> */}
-            <SearchBox/>
+            {/* <SearchBox/> */}
+            <MapAndList/>
         </div>
     );
 }
