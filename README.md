@@ -6,6 +6,8 @@
 2. 크롬에서, 특정 자료 출처 알려주는 App
     * 용도 : 가짜 뉴스 판별
 
+study t
+
 
 # 연습 2
 <img src="https://github.com/MinSikSon/ARA/blob/master/img/exercise_2.png" width="80%"/>
